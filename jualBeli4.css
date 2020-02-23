@@ -1,0 +1,266 @@
+body{
+  background-color: #ddd;
+}
+
+.Header{
+  background-color: red;
+  max-width: 100%;
+  height: 50px;
+  color: white;
+  position: fixed;
+}
+a:visited, a:link {
+  text-decoration: none;
+  background-color: none;
+  float: right;
+  margin: 12px;
+  margin-right: 40px;
+  color: white;
+}
+a:hover, a:active {
+  color: red;
+}
+
+input[type:text] {
+  float: right;
+}
+
+.search {
+  float: right;
+  padding: 6px;
+  width: 80%;
+  position: relative;
+  display: flex;
+}
+
+.searchTem {
+  margin-left: 130px;
+  width: 80%;
+  border: 3px solid orange;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+}
+
+.searchTem:focus {
+  color: blue;
+}
+
+.serachButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #00B4CC;
+}
+
+.navigation{
+  background-color: lightgray;
+  width: 100%;
+  height: 40px;
+}
+
+.content{
+  background-color: white;
+  width: 72%;
+  height: 550px;
+  margin-left: 40px;
+  padding: 20px;
+}
+
+img{
+  margin-left: 30px;
+  margin-top: 40px;
+  
+}
+
+td.foto{
+  height: 600px;
+  position: absolute;
+  top: auto;
+}
+
+td.judul{
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 100px;
+  width: 700px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.harga{
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 60px;
+  width: 700px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 150px;
+  font-size: 40px;
+}
+
+.stok_barang{
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 60px;
+  width: 700px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 220px;
+  font-size: 16px;
+}
+
+.a{
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.beli{
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 40px;
+  width: 700px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 290px;
+  font-size: 16px;
+}
+
+.beli_sekarang{
+  width: 700px;
+  height: 40px;
+  background-color: #4CAF50;
+}
+
+.tambah_Kekeranjang{
+  width: 350px;
+  height: 40px;
+  text-decoration: none;
+  background-color: lightgray;
+  border: none;
+  margin-top: 5px;
+}
+
+.chat_pelapak{
+width: 340px;
+height: 40px;
+text-decoration: none;
+background-color: lightgray;
+border: none;
+position: absolute;
+top: 46px;
+left: 350px;
+margin-left: 10px;
+}
+
+.nanya{
+  position: absolute;
+  top: 420px;
+  left: 340px;
+  border-radius: 30px;
+}
+
+.jaminan{
+  position: absolute;
+  top: 450px;
+  left: 340px;
+}
+
+.c{
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.content1{
+  height: auto;
+  width: 800px;
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 30px;
+}
+
+.gambar{
+  width: 200px;
+  height: 250px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.profil_pelapak{
+  position: absolute;
+  top: 150px;
+  left: 1100px;
+}
+.boy{
+  width: 100px;
+  height: 100px;
+}
+
+.ab{
+  position: relative;
+  margin-top: 60px;
+  width: 67%;
+  margin-left: 55px;
+}
+
+.font_informasi_produk{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.opsi1{
+  font-family: cursive;
+  color:black;
+  padding: 10px;
+  position: absolute;
+  right: 800px;
+  top: 578px;
+}
+
+.opsi2{
+  font-family: cursive;
+  color:black;
+  padding: 10px;
+  position: absolute;
+  right: 670px;
+  top: 578px;
+}
+
+.opsi3{
+  font-family: cursive;
+  color:black;
+  padding: 10px;
+  position: absolute;
+  right: 470px;
+  top: 578px;
+}
+
+.icon-book {
+  height: 30px;
+  position: absolute;
+  right: 945px;
+  top: 543px;
+}
+
+.icon-star{
+  height: 30px;
+  position: absolute;
+  right: 735px;
+  top: 543px;
+}
+
+.icon-chat{
+  height: 30px;
+  position: absolute;
+  right: 595px;
+  top: 543px;
+}
