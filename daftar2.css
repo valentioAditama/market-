@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: "ailerons", sans-serif;
-	background-color: #a5b1c2;
+	background-color: rgb(52,152,219);
 }
 
 
@@ -36,24 +36,26 @@ body{
 }
 
 .box{
-	width: 400px;
+	width: 600px;
 	padding: 40px;
 	position: absolute;
-	top: 60%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #191919;
+	background: white;
 	text-align: center;
 	border-radius: 15px;
-	height: 620px;
-	margin-top: -60px;
+	height: 600px;
+	margin-top: 60px;
 	margin-bottom: 10px;
 }
 
 .box h1{
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	font-weight: 500;
+	font-family: times new roman;
+	margin-top: -10px;
 }
 
 .box input[type = "text"], .box input[type = "password"],.box input[type = "email"]{
@@ -62,13 +64,13 @@ body{
 	display:block;
 	margin: 20px auto;
 	border: 2px solid #3498db;
-	padding: 14px 10px;
-	width: 250px;
+	padding: 14px 6px;
+	width: 590px;
 	outline: none;
-	color: white;
+	color: black;
 	border-radius: 24px;
 	transition: 0.4s;
-
+	margin-left: -4px;
 }
 
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
@@ -84,7 +86,7 @@ body{
 	border: 2px solid #2ecc71;
 	padding: 14px 40px;
 	outline: none;
-	color: white;
+	color: black;
 	border-radius: 24px;
 	transition: 0.25s;
 	cursor: pointer;
@@ -98,6 +100,7 @@ a{
 	font-family: agency fb;
 	font-size: 17px;
 	text-decoration: none;
+	color: #2ecc71;
 }
 
 a:hover{
@@ -105,6 +108,6 @@ a:hover{
 }
 
 p{
-	color: white;
+	color: black;
 	font-family: agency fb;
 }

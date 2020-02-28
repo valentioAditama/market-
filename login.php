@@ -31,6 +31,7 @@ if(isset($_POST["log"])) {
 
 ?>
 <head>
+	<link rel="shortcut icon" href="logo.jpg">
 	<meta charset="utf-8">
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="login2.css">
@@ -43,16 +44,17 @@ if(isset($_POST["log"])) {
 	top: 60%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #191919;
+	background: white;
 	text-align: center;
 	border-radius: 15px;
 	height: <?=$height ?> px;
 	margin-top: -60px;
+		}
 	body{
 	margin: 0;
 	padding: 0;
 	font-family: "ailerons", sans-serif;
-	background-color: #a5b1c2;
+	background-color: rgb(52,152,219);
 }
 
 .animated-text {
@@ -98,7 +100,7 @@ if(isset($_POST["log"])) {
 }
 
 .box h1{
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	font-weight: 500;
 }
@@ -110,9 +112,9 @@ if(isset($_POST["log"])) {
 	margin: 20px auto;
 	border: 2px solid #3498db;
 	padding: 14px 10px;
-	width: 250px;
+	width: 390px;
 	outline: none;
-	color: white;
+	color:black;
 	border-radius: 24px;
 	transition: 0.4s;
 
@@ -120,7 +122,7 @@ if(isset($_POST["log"])) {
 
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
 	border-color: #2ecc71;
-	background-color: black;
+	background-color: white;
 }
 
 .box input[type = "submit"]{
@@ -132,7 +134,7 @@ if(isset($_POST["log"])) {
 	border: 2px solid #2ecc71;
 	padding: 14px 40px;
 	outline: none;
-	color: white;
+	color: black;
 	border-radius: 24px;
 	transition: 0.25s;
 	cursor: pointer;
@@ -154,20 +156,13 @@ a:hover{
 }
 
 p{
-	color: white;
+	color: black;
 	font-family: agency fb;
 }
 
 }
 </style>
 </head >
-<body vlink="#2ecc71">
-	<div class="animated-text">
-		<div class="line">Selamat</div>
-		<div class="line">Datang</div>
-		<div class="line">di</div>
-		<div class="line">M4rket</div>
-	</div>
 <body>
 
 	<form class="box" action="" method="post">
