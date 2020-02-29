@@ -84,7 +84,7 @@ if (isset($_GET['query'])) {
           <i class="fa fa-bars"></i>
         </a>
         &nbsp;
-        <a class="navbar-brand text-dark" href="market.php">MARKET</a>
+        <a class="navbar-brand text-dark" href="m4rket.php">MARKET</a>
 
         <input type="text" class="form-control" name="query" value="<?= @$query ?>" placeholder="Cari produk barang disini.." />
         <div class="input-group-append">
@@ -96,10 +96,11 @@ if (isset($_GET['query'])) {
   <?php if (!isset($_SESSION['login'])) : ?>
     <a href="login.php"><button class="btn btn-success">Login</button></a>
   <?php else : ?>
-    <a href="Profile.php"><img style="margin-left: 8px; margin-top: 5px;  " width="50" height="50" src="Profile/<?= $profile['profile'] ?>">
+    <a href="Profile.php"><img style="margin-left: 8px; margin-top: 10px;" height="30" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>">
       <p style="font-size: 12px; margin: 0px; margin-left: 10px;"><?= word_limit($profile['nama'], 8) ?></p>
     </a>
-  <?php endif ?>
+  <?php endif; ?>
+  </nav>
 
   </nav>
   <ol class="breadcrumb h-25">
@@ -235,11 +236,49 @@ if (isset($_GET['query'])) {
             </div>
           </div>
         </div>
-        <hr>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+
+    </div>
+
+    <div class="col-sm-8" style="background-color: floralwhite; height: 90px; width: 600px; border: 2px solid black;">
+      <div class="row">
+        <div class="col-sm-2" style="margin-left: 20px;">
+          <a href=""><img src="img_avatar1.png" height="75px;" style="border-radius: 200px; margin-top: 7px;" alt=""></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="" style="text-decoration: none;">
+            <p style="color: black; margin-top: 25px; font-weight: 500; font-family: sans-serif; font-size: 24px;">Realme.official</p>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <button class="btn btn-primary btn-sm" style="margin-top: 27px; margin-right: 50px;">Chat pelapak</button>
+        </div>
+        <div class="col-sm-3">
+          <button class="btn btn-outline-info btn-sm" style="margin-top: 27px; margin-left: -80px;">Lihat Toko</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="col-sm-2">
+
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
 <script>
   $(function() {
     $(".loading").hide();
