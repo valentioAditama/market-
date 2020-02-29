@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Feb 2020 pada 07.33
--- Versi server: 10.4.6-MariaDB
--- Versi PHP: 7.3.9
+-- Generation Time: Feb 17, 2020 at 12:05 AM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `barang`
+-- Table structure for table `barang`
 --
 
 CREATE TABLE `barang` (
@@ -41,33 +41,25 @@ CREATE TABLE `barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `barang`
+-- Dumping data for table `barang`
 --
 
 INSERT INTO `barang` (`id_barang`, `id_user`, `nama_barang`, `kategori_barang`, `harga_barang`, `stok_barang`, `deskripsi`, `tanggal_barang`, `gambar_barang`) VALUES
-(86, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(87, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(104, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(105, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(106, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(107, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(108, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(109, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(110, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(111, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(118, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(119, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(120, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(121, 86, 'Ps4 SONY Slim 1TB mega pack2 garansi resmi SONY', 'lain-lain', 3875000, 20, 'selamat datang dan terima kasih anda telah melihat produk kami\r\nbarang selalu ready stok\r\nFREE ONGKIR\r\nplaystation 4 slim / ps4 slim\r\nbundle mega pack 2\r\ngaransi resmi sony\r\n\r\npaket dan perlengkapan\r\n1 unit playstation 4 slim ( jet black ) with 1tb hardisk \r\n( CUH - 2218BB01 )\r\n1 unit DUAL SHOCK 4 wirelless controller ( jet black ) \r\n1 unit bluray god of war ( asia )\r\n1 unit bluray horizon zero dawn complete edition asia\r\n1 unit bluray GTA V premium edition\r\n1 unit playstation plus 3 bulan asia\r\n1 unit fortnite bundle neo versa ( download code )\r\n - epic neo versa outfit\r\n - epic neo phrenzy back bling\r\n - 2000 V - bucks\r\n\r\nmain processor\r\nsingle - chip custom processor\r\nCPU : X86-64 AMD JAGUAR 8 cores\r\nGPU : 1.84 TFLOPS, AMD radeon based graphics engine\r\nmemory GDDR5 main 8gb\r\nhardisk internal 1 tb\r\n\r\ncatatan \r\nkliam garansi bisa langsung bawa ke kantor cabang sony service center terdekat di kota anda\r\n\r\nterima kasih atas kunjungan anda', '2020-02-23 12:33:42', '5e526316f0aa6.jpg'),
-(122, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(123, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(124, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg'),
-(125, 86, 'JaketSweater Hoodie Hitam Polos Keren Berkualitas Distro ', 'lain-lain', 134000, 40, '\r\n\r\nSize Tersedia: M,L, XL ( size lokal )\r\n\r\nSaatnya tampil Simpel, Santai &amp; Elegan dengan jaket Hoodie ini. Sangat cocok dipakai untuk nonton bareng, hang out, atau casual.\r\n\r\nPS: Sebelum memesan mohon tanyakan terlebih dahulu ketersediaan barangnya.\r\n\r\nTerimakasih, happy shopping ^^\r\n\r\nTerimakasih telah berkunjung ke toko kami, jam kerja 08:00-17:00 WIB\r\n', '2020-02-23 12:37:05', '5e5263e1b8d5b.jpg');
+(68, 75, '1', 'gadget', 122, 1231, 'qweqeqe', '2019-10-26 18:12:08', '5db47058433be.jpg'),
+(71, 74, 'diazs', 'perlengkapan_sekolah', 10000, 20, 'bagus', '2019-10-27 02:01:14', '5db4ec5aaeffc.jpg'),
+(73, 79, 'KemodMangpang', 'lain-lain', 300000, 90, 'Bagus Buatan Kemod asli', '2019-10-27 02:22:27', '5db4f15387a90.jpg'),
+(75, 81, 'Badjoe', 'perlengkapan_sekolah', 100000, 10, 'Ada tintanya', '2019-10-27 14:30:04', '5db59bdc6fc6c.jpg'),
+(76, 81, 'alat', 'lain-lain', 25000, 100, 'bar bar bau', '2019-10-27 14:31:18', '5db59c26e4d70.jpeg'),
+(77, 81, 'Teh gelas', 'makanan_minuman', 100000, 100, 'Bar bar bau', '2019-10-27 14:32:14', '5db59c5e781ef.jpeg'),
+(78, 81, 'baju + cincin', 'aksesoris', 30000, 100, 'Bar bar bau', '2019-10-27 14:33:00', '5db59c8c9b682.jpeg'),
+(79, 81, 'Cilok', 'makanan_minuman', 2000, 100, 'stok terbatas', '2019-10-27 14:34:11', '5db59cd3a3836.jpg'),
+(80, 75, 'qwewq', 'makanan&amp;minuman', 121132, 12, 'qwewqe', '2020-01-20 16:58:59', '5e25ce43a358e.jpeg'),
+(82, 84, 'Baju Sekolah', 'perlengkapan_sekolah', 250000, 100, 'Bagus Masih Baru', '2020-02-16 17:45:48', '5e4971bca1e2d.png');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data_user`
+-- Table structure for table `data_user`
 --
 
 CREATE TABLE `data_user` (
@@ -82,18 +74,36 @@ CREATE TABLE `data_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `data_user`
+-- Dumping data for table `data_user`
 --
 
 INSERT INTO `data_user` (`id_user`, `nama`, `nama_pelapak`, `no_tlp`, `email`, `username`, `password`, `profile`) VALUES
-(86, 'Diazs Martiansyah', 'Kantin', '089662251672', 'diazsmartiansyah28@gmail.com', 'diazs123', '$2y$10$cTqH9EXFq6b7g7xt85lDbe2sBpD2DsFoDnDk1oVDNcpAVkuHtP4lS', ''),
-(87, 'valentio aditama ', 'palen cigo', '0895371909287', 'valentioaditama8@gmail.com', 'valentio18', '$2y$10$bKbaxMQ02x6rCS4oY.9dN.2EPciBriRMIBD3ufkGpNwgl.t8C2v/C', '5e49f83de53c9.jpg'),
-(88, 'yusuf dwi', 'dwiLapak', '089128127391', 'dwiyusuf12@gmail.com', 'yusuf123', '$2y$10$PvCFRFg.B2Ra97K8GJu7xOeLbnCyJYQZg9oG8VgP92gPMLOg1ufkS', '');
+(65, 'd', 'd', NULL, '', 's', '$2y$10$vNxzLFcMhy2DP4Mcx7SSYeFqD1i17ngv3DiB3gXV/W2Lvr7Caqj8K', ''),
+(66, '123', '123', NULL, '', 'ee', '$2y$10$1zp4R6geDo32XZ8XapNefe9vpgMBvk1d6S3HVFvyFjYnOb1kxYEq.', ''),
+(67, 'diazs martiansyah', '', '', '', 'qq', '$2y$10$PUiRfX6.ezMf4rTy9UfRRuA0UK.J94KtX7CTgrlY5oxUGDqO..73C', ''),
+(68, 'diazs martiansyah', 'Diazs', '', '', 'diazs', '$2y$10$GwfGcb9vR4yp.364RvDqU.PBWCl09rhLd9Ql0SANjYQCU8vRoVtt.', ''),
+(69, 'diazsbudjang', '', '', '', 'walah', '$2y$10$e9bHdfNUUlNCmQ.o4xpAZOEWITxiWKkt0rrFCAJYEELtFGHeyjfIO', ''),
+(70, 'diazs', 'uhuy', '', '', '12351', '$2y$10$ZZ3JScj/MZe324UZAopUYOU10/D7aRXQAm/Icwp0Xrmfa7tHkSdfC', ''),
+(71, 'qeqeqe', 'qweqqw', '', '', 'qweee', '$2y$10$B5olgRSIClmUF67YsEaK3.ZbKAx0UQtcC7We3lRLakVCAmBUWvvya', ''),
+(72, 'q', 'q', 'q', '', 'w', '$2y$10$3cShCv.ObtAlmEA4qRHl7eQ/eSEZDcl5.UBW1i1KuODeatA2vMDBy', ''),
+(73, 'diazs', 'diazs_', '089283132', '', 'diazs123', '$2y$10$vNdVbeQV0/NrWB6I0O0SHOLvh/hy.7.jtvJ7uAR19.WqlfmY8bLBm', ''),
+(74, 'Diazs_Programmer', 'Diazs_kantin', '09981231', '', 'diazs_lc', '123456789', '5db5844b731d3.jpg'),
+(75, 'diazs martiansyah', 'Diazs Martiansyah', '019293413', '', '', '$2y$10$vEH24Q5gOcoNWoJGu9AarOU.bZx1jIU9OFRe9TrOSj6bYyCzOJfRS', ''),
+(76, 'd', 'd', 'd', '', 'd', '$2y$10$bWFAwxIo5nHtLTkfuB2XT.58t919lJsql9UJuHMl4Xlqclr.yzm7i', ''),
+(77, 'diazs martiansyah', 'diazs', '0819123214', '', 'jajang', '$2y$10$5sjDiUREJ2bbtNidLA2Ev.s4wgf71gl/UfPuVLZT2OSuKy.YMXgZm', ''),
+(78, 'm', 'm', '1920131313123', '', 'qwertyuiop', '$2y$10$P5oZDxbTvXhAuqCIPicp/.UO5kQ1BDSw4Smbe2OMBX9ImjFXZDDrG', ''),
+(79, 'Kemod', 'Kemod_123', '098123123387', '', 'kemod123', '$2y$10$PvricXatn/SGu0s1fIbAW.SZDMYxlyoQ7vnFJTBA1I0blgbvi5xfa', ''),
+(80, 'LOLO', 'LOLO', '102921321313', '', 'lolololo', '$2y$10$.onmM7KwnfuNJE2MaqZwZ.n6j3RiQJqiQSfrkP2HdBym2bXbM6rhG', ''),
+(81, 'adulahmad', 'adulahmad', '13131232138', '', 'adulahmad', '$2y$10$N9FpozxRn9vW.AKI/NIU7.KA8HBqkoaAHmJfwRPIIoDjciItFOZdS', ''),
+(82, 'adulahmad1', 'adulahmad1', '13312312313123', '', 'adulahmad1', '$2y$10$N2Qz0eTKRFjtYA8ukcHN.u4mZICWkNTscHx.8/r5I07t14XtOcqoi', ''),
+(83, 'dean', '1', '12312412412412', '', '1', '$2y$10$APmP4k/HbZPR.2A42IePXOGHHwEXPvR0ns.SBvKeCbM/YIAWKWp5S', ''),
+(84, 'diazsDw', 'diazs', '089662251672', 'diazsmartiansyah28@gmail.com', 'diazs25', '$2y$10$KNjgHcsBdwxbP4MXVaBJSOcnX1PBjzx3uXdd7pTjgWdB4kdmi3pfy', '5e4933fda9c10.png'),
+(85, 'Dz', 'DzMrt', '02455126585', 'diazsmartiansyah.siswa@smkn4bdg.sch.id', 'diazs26', '$2y$10$9YVt7sRy73aRE0mXX5db0ueLRE3BMIq3XlpZ9LzjWBHEJrbrSXcBK', '');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `penjual`
+-- Table structure for table `penjual`
 --
 
 CREATE TABLE `penjual` (
@@ -104,7 +114,7 @@ CREATE TABLE `penjual` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -116,7 +126,7 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
 INSERT INTO `transaksi` (`id_pembayaran`, `id_barang`, `bayar`, `kembalian`, `tanggal_transaksi`) VALUES
@@ -133,52 +143,52 @@ INSERT INTO `transaksi` (`id_pembayaran`, `id_barang`, `bayar`, `kembalian`, `ta
 --
 
 --
--- Indeks untuk tabel `barang`
+-- Indexes for table `barang`
 --
 ALTER TABLE `barang`
   ADD PRIMARY KEY (`id_barang`),
   ADD KEY `id_user` (`id_user`);
 
 --
--- Indeks untuk tabel `data_user`
+-- Indexes for table `data_user`
 --
 ALTER TABLE `data_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indeks untuk tabel `transaksi`
+-- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`id_pembayaran`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `barang`
+-- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
--- AUTO_INCREMENT untuk tabel `data_user`
+-- AUTO_INCREMENT for table `data_user`
 --
 ALTER TABLE `data_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 
 --
--- AUTO_INCREMENT untuk tabel `transaksi`
+-- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
   MODIFY `id_pembayaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `barang`
+-- Constraints for table `barang`
 --
 ALTER TABLE `barang`
   ADD CONSTRAINT `barang_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `data_user` (`id_user`);
