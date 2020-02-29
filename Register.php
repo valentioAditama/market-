@@ -19,6 +19,7 @@ if(isset($_POST["submit"])){
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="shortcut icon" href="logo.jpg">
 	<title>Register</title>
 	<link rel="stylesheet" href="daftar2.css">
 </head>
