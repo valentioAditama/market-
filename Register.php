@@ -13,7 +13,6 @@ if(isset($_POST["submit"])){
 		echo mysqli_error($conn);
 	}
 }
-
 ?>
 
 <!DOCTYPE html>
