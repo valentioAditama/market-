@@ -261,10 +261,10 @@ if (isset($_GET['query'])) {
           </a>
         </div>
         <div class="col-sm-3">
-          <button class="btn btn-primary btn-sm" style="margin-top: 27px; margin-right: 50px;">Chat pelapak</button>
+          <a href="chat/indexchat.html"><button class="btn btn-primary btn-sm" style="margin-top: 27px; margin-right: 50px;">Chat pelapak</button></a>
         </div>
         <div class="col-sm-3">
-          <button class="btn btn-outline-info btn-sm" style="margin-top: 27px; margin-left: -80px;">Lihat Toko</button>
+          <a href="penjual.php"><button class="btn btn-outline-info btn-sm" style="margin-top: 27px; margin-left: -80px;">Lihat Toko</button></a>
         </div>
       </div>
     </div>
