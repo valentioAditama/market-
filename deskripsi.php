@@ -12,6 +12,15 @@ $barang = query("
   ON barang.id_user = data_user.id_user
   WHERE id_barang = '$id_barang'")[0];
 
+$_SESSION['transaksi'] = array();
+
+$transaksi = array();
+$transaksi['pelapak'] = $barang['nama_pelapak'];
+$transaksi['nama_barang'] = $barang['nama_barang'];
+$transaksi['id_barang'] = $barang['id_barang'];
+
+array_push($_SESSION['transaksi'], $transaksi);
+
 if (isset($_GET['query'])) {
   $query = $_GET['query'];
   header("Location:market.php?query=$query");
@@ -68,7 +77,7 @@ if (isset($_GET['query'])) {
     <a href="#" class="close" onclick="closeSideMenu()">
       <i class="fa fa-times"></i>
     </a>
-    <a href=""><i class="fa fa-home"></i> Home</a>
+    <a href="market.php"><i class="fa fa-home"></i> Home</a>
     <a href="AboutUs.php"> <i class="fa fa-question-circle"></i> About</a>
     <a href="Jual.php"><i class="fa fa-cart-plus"></i> Jual</a>
     <a href=""> <i class="fa fa-shopping-bag"></i> Kategori</a>
@@ -104,7 +113,7 @@ if (isset($_GET['query'])) {
 
   </nav>
   <ol class="breadcrumb h-25">
-    <li class="breadcrumb-item h-25 "><a href="#">Home</a></li>
+    <li class="breadcrumb-item h-25 "><a href="market.php">Home</a></li>
     <li class="breadcrumb-item"><a href="#">Kategori</a></li>
     <li class="breadcrumb-item active">Toko</li>
   </ol>
@@ -192,15 +201,15 @@ if (isset($_GET['query'])) {
                       <div class="row">
                         <div class="col">
                           COD
-                          <input type="checkbox" name="" id="">
+                          <input type="radio" name="tipe" value="COD" id="0" onclick="setKukis(this.value)" required="">
                         </div>
                         <div class="col">
                           Pulsa
-                          <input type="checkbox">
+                          <input type="radio" name="tipe" value="pulsa" onclick="setKukis(this.value)" required="">
                         </div>
                         <div class="col">
                           Transfer
-                          <input type="checkbox">
+                          <input type="radio" name="tipe" value="transfer" onclick="setKukis(this.value)" required="">
                         </div>
                       </div>
                       <div class="row">
@@ -227,7 +236,7 @@ if (isset($_GET['query'])) {
                     </div>
                   </div>
                   <div class=" modal-footer">
-                    <a href="<?= getWALink(no_telepon($barang['no_tlp'])); ?>"><button type="button" class="btn btn-primary"> Chat Pelapak</button></a>
+                    <button onclick="directWA()" id="dir" type="button" class="btn btn-primary"> Chat Pelapak</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-success btnLanjut">Lanjutkan</button>
                   </div>
@@ -279,6 +288,23 @@ if (isset($_GET['query'])) {
 <br>
 <br>
 <br>
+
+<script type="text/javascript">
+    function directWA(){
+      window.open("<?=getWALink(no_telepon($barang['no_tlp'])); ?>");
+      document.location.href = "";
+    }
+
+</script>
+
+
+<script type="text/javascript">
+    function setKukis(value){
+      
+      document.cookie = "tipe =" + value;
+    }
+ </script>
+
 <script>
   $(function() {
     $(".loading").hide();
@@ -287,7 +313,7 @@ if (isset($_GET['query'])) {
 
       var jumlah = $(".jumlah").val();
       var href = $(this).attr('type2') + "&jumlah=" + jumlah;
-      var url = "deskripsi.php?id=<?= $id_barang ?>";
+      var url = "detail_transaksi.php";
       $(".btnLanjut").off();
       $(".btnLanjut").on('click', function() {
         $(".modal-body").fadeOut(400);
@@ -307,7 +333,7 @@ if (isset($_GET['query'])) {
             )
             setTimeout(function() {
               $(location).attr('href', url);
-            }, 3000);
+            }, 1000);
           }
         });
       });

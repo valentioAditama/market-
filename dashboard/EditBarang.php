@@ -1,5 +1,5 @@
 <?php 
-include_once 'function.php';
+include_once '../function.php';
 @$id = $_GET['id'];
 @$barang = query("
   SELECT *
@@ -7,7 +7,7 @@ include_once 'function.php';
   WHERE id_barang = '$id'")[0];
 
 if (isset($_POST['submit'])) {
-	if (ubahbrg($_POST)>-1) {
+	if (ubahbrg($_POST,"../img")>-1) {
 		echo "<script>
 					alert('Berhasil Diubah');
 					document.location.href = 'tables.php';

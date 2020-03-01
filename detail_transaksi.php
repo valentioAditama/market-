@@ -1,3 +1,24 @@
+<?php 
+session_start();
+
+require_once 'function.php';
+$user = $_SESSION['login'];
+
+$profile = query("SELECT * FROM data_user WHERE id_user = '$user'")[0];
+$id_transaksi = $_SESSION['transaksi'][0]['id_transaksi'];
+$nama_barang = $_SESSION['transaksi'][0]['nama_barang'];
+$pelapak = $_SESSION['transaksi'][0]['pelapak'];
+$jumlah = $_SESSION['transaksi'][0]['jumlah'];
+$id_barang = $_SESSION['transaksi'][0]['id_barang'];
+$harga_barang = query("SELECT harga_barang FROM barang WHERE id_barang = $id_barang")[0];
+$harga_barang = $harga_barang['harga_barang'];
+$total = $jumlah * $harga_barang;
+
+$barang = query("
+  SELECT *
+  FROM barang 
+  WHERE id_barang = '$id_barang'")[0];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +76,7 @@
             <a href="#" class="close" onclick="closeSideMenu()">
                 <i class="fa fa-times"></i>
             </a>
-            <a href=""><i class="fa fa-home"></i> Home</a>
+            <a href="market.php"><i class="fa fa-home"></i> Home</a>
             <a href="AboutUs.php"> <i class="fa fa-question-circle"></i> About</a>
             <a href="Jual.php"><i class="fa fa-cart-plus"></i> Jual</a>
             <a href=""> <i class="fa fa-shopping-bag"></i> Kategori</a>
@@ -93,7 +114,7 @@
 
         </nav>
         <ol class="breadcrumb h-25">
-            <li class="breadcrumb-item h-25 "><a href="#">Home</a></li>
+            <li class="breadcrumb-item h-25 "><a href="market.php">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Kategori</a></li>
             <li class="breadcrumb-item active">Toko</li>
         </ol>
@@ -110,7 +131,7 @@
                             Nama Pelapak
                         </div>
                         <div class="col-sm-4" style="margin-top: 40px;">
-                            Nama Barang
+                            Produk
                         </div>
                         <div class="col-sm-3" style="margin-top: 40px;">
                             Nama pembeli
@@ -123,10 +144,10 @@
                                     alt=""></a>
                         </div>
                         <div class="col-sm-4" style="margin-top: 20px;">
-                            <a href=""><img src="jaket.jpg" height="100px;" alt=""></a>
+                            <a href=""><img src="img/<?=$barang['gambar_barang'] ?>" height="100px;" alt=""></a>
                         </div>
                         <div class="col-sm-3" style="margin-top: 20px; margin-left: 5px;">
-                            <a href=""><img src="img_avatar1.png" height="100px" style="border-radius: 200px;"
+                            <a href=""><img src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>" height="100px" style="border-radius: 200px;"
                                     alt=""></a>
                         </div>
                         <div class="col-sm-2" style="margin-top: 20px;">
@@ -135,13 +156,13 @@
                     </div>
                     <div class="row" style="margin-left: 30px;">
                         <div class="col-sm-3" style="margin-left: 25px; margin-top: 10px;">
-                            <a href="" style="color: black;">Realme.official</a>
+                            <a href="" style="color: black;"><?=$pelapak?></a>
                         </div>
                         <div class="col-sm-4" style="margin-top: 10px; margin-left: 60px; ">
-                            <a href="" style="color: black;"> JAKET HODIEE PRIA.. </a>
+                            <a href="" style="color: black;"><?=word_limit($nama_barang,100) ?></a>
                         </div>
                         <div class="col-sm-3" style="margin-top: 10px; margin-left: 60px; margin-left: 20px; ">
-                            <a href="" style="color: black;"> Valentio Aditama </a>
+                            <a href="" style="color: black;"> <?=$profile['nama']?> </a>
                         </div>
                     </div>
 
@@ -150,13 +171,13 @@
                             Id Transaksi:
                         </div>
                         <div class="col-sm-2" style="margin-top: 80px; font-weight: 500;">
-                            129127192721
+                            <?=$id_transaksi ?>
                         </div>
                         <div class="col-sm-2" style="margin-top: 80px; margin-left: 60px;">
                             Jumlah Barang:
                         </div>
                         <div class="col-sm-2" style="margin-top: 80px; margin-left: 60px;">
-                            12
+                            <?=$jumlah ?>
                         </div>
                     </div>
                     <div class="row">
@@ -165,20 +186,20 @@
                         </div>
                         <div class="col-sm-2"
                             style="margin-top: 75px; color: rgb(230, 91, 36); font-family: roboto; font-size: 20px; font-weight: 600; ">
-                            Rp. 130.400,00
+                            Rp. <?=$harga_barang ?>
                         </div>
                         <div class="col-sm-2" style="margin-top: 80px; margin-left: 60px;">
                             Total Belanja:
                         </div>
                         <div class="col-sm-2"
                             style="color: rgb(230, 91, 36); font-family: roboto; font-size: 20px; font-weight: 600; margin-top: 75px; margin-left: 60px;">
-                            Rp. 763.200,00
+                            Rp. <?=$total ?>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4"></div>
                         <div class="col-sm-1" style="margin-top: 90px;">
-                            <button class="btn btn-primary">Selesai</button>
+                            <a href="home.php"></a><button class="btn btn-primary">Selesai</button>
                         </div>
                         <div class="col-sm-2" style="margin-top: 90px;">
                             <button class="btn btn-info">Chat Pelapak</button>
