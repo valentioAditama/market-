@@ -236,9 +236,15 @@ if (isset($_GET['query'])) {
                     </div>
                   </div>
                   <div class=" modal-footer">
+<<<<<<< HEAD
                     <button onclick="directWA()" id="dir" type="button" class="btn btn-primary"> Chat Pelapak</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-success btnLanjut">Lanjutkan</button>
+=======
+                    <a href="chat/indexchat.html"><button type="button" class="btn btn-primary"><img src="icons8-chat-48.png" height="25px" alt=""> Chat</button></a>
+                    <a href="<?= getWALink(no_telepon($barang['no_tlp'])); ?>"><button type="button" class="btn btn-primary"> <img src="icons8-whatsapp-48.png" height="25px" alt=""> Chat Pelapak</button></a>
+                    <button type="button" class="btn btn-success btnLanjut ">Lanjutkan</button>
+>>>>>>> cf19e67fb3d91429f5c3200bcd098075eeecb740
                   </div>
                 </div>
               </div>
