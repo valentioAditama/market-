@@ -87,8 +87,8 @@ if (empty($daftarBarang)) {
   <form action="">
 
     <body style="background-color: rgb(236, 234, 226)">
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="height: 80px;">
-        <a class="navbar-brand" href="market.php  ">M4RKET</a>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-light " style="height: 80px;">
+        <a class="navbar-brand" href="market.php" style="color: black">M4RKET</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -99,10 +99,11 @@ if (empty($daftarBarang)) {
             <input class="form-control mr-sm-2" type="search" placeholder="Search...." name="query" value="<?= @$query ?>" aria-label="Search">
             <button class="btn  my-2 my-sm-0 bg-success text-white" type="submit">Search</button>
           </form>
+          <a href="simpan_keranjang.html"><img src="icons8-shopping-cart-100.png" height="50px" alt=""></a>
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img height="30" width="30" style="border-radius: 50%" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>" alt=""> Valentio
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
+                <img height="30" width="30" style="border-radius: 50%;" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>" alt=""> Valentio
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="Profile.php">Edit Profile</a>
