@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once 'function.php';
 @$id = $_GET['id'];
 @$barang = query("
@@ -7,18 +7,17 @@ include_once 'function.php';
   WHERE id_barang = '$id'")[0];
 
 if (isset($_POST['submit'])) {
-	if (ubahbrg($_POST)>-1) {
+	if (ubahbrg($_POST) > -1) {
 		echo "<script>
 					alert('Berhasil Diubah');
-					document.location.href = 'tables.php';
+					document.location.href = 'EditBarang.php?id=" . $id . "';
 				</script>";
-	}else{
+	} else {
 		echo "<script>
 					alert('Gagal Diubah');
 					document.location.href = '';
 				</script>";
 	}
-	
 }
 ?>
 
@@ -45,44 +44,44 @@ if (isset($_POST['submit'])) {
 	<div class="container-fluid" style="background-color: white;margin-top: 10px;border-radius: 8px;width: 98%;">
 		<div class="row">
 			<div class="col-10">
-				<label style="font-size: 30px;">Judul Barang</label>
+				<label style="font-size: 30px;"><?= @$barang['nama_barang'] ?></label>
 				<form action="" method="post" enctype="multipart/form-data">
 					<div class="form-group">
-						<input type="file" name="gambar" class="form-control" >
+						<input type="file" name="gambar" class="form-control">
 					</div>
-					<input type="hidden" name="gambarlama" value="<?=@$barang['gambar_barang'] ?>">
-					<input type="hidden" name="id_barang" value="<?=@$barang['id_barang'] ?>">
+					<input type="hidden" name="gambarlama" value="<?= @$barang['gambar_barang'] ?>">
+					<input type="hidden" name="id_barang" value="<?= @$barang['id_barang'] ?>">
 					<div class="form-group">
-						<input type="text" name="nama_barang" class="form-control" placeholder="Judul" value="<?=@$barang['nama_barang']?>">
+						<input type="text" name="nama_barang" class="form-control" placeholder="Judul" value="<?= @$barang['nama_barang'] ?>">
 					</div>
 					<div class="form-group">
-						<input type="number" name="harga_barang" class="form-control" placeholder="Harga" value="<?=@$barang['harga_barang'] ?>">
+						<input type="number" name="harga_barang" class="form-control" placeholder="Harga" value="<?= @$barang['harga_barang'] ?>">
 					</div>
 					<div class="form-group">
 						<select class="form-control" id="exampleFormControlSelect1" name="kategori_barang">
-							<option value="perlengkapan_sekolah" <?=@$barang['nama_barang']=="perlengkapan_sekolah"?"selected":"" ?>>Perlengkapan Sekolah</option>
-							<option value="gadget" <?=@$barang['kategori_barang']=="gadget"?"selected":"" ?>>Gadget</option>
-							<option value="aksesoris" <?=@$barang['kategori_barang']=="aksesoris"?"selected":"" ?>>Aksesoris</option>
-							<option value="makanan_minuman" <?=@$barang['kategori_barang']=="makanan_minuman"?"selected":"" ?>>Makanan/Minuman</option>
-							<option value="lain-lain" <?=@$barang['kategori_barang']=="lain-lain"?"selected":"" ?>>Lain-lain</option>
+							<option value="perlengkapan_sekolah" <?= @$barang['nama_barang'] == "perlengkapan_sekolah" ? "selected" : "" ?>>Perlengkapan Sekolah</option>
+							<option value="gadget" <?= @$barang['kategori_barang'] == "gadget" ? "selected" : "" ?>>Gadget</option>
+							<option value="aksesoris" <?= @$barang['kategori_barang'] == "aksesoris" ? "selected" : "" ?>>Aksesoris</option>
+							<option value="makanan_minuman" <?= @$barang['kategori_barang'] == "makanan_minuman" ? "selected" : "" ?>>Makanan/Minuman</option>
+							<option value="lain-lain" <?= @$barang['kategori_barang'] == "lain-lain" ? "selected" : "" ?>>Lain-lain</option>
 						</select>
 					</div>
 					<div class="form-group">
-						<input type="number" name="stok_barang" class="form-control" placeholder="stok" value="<?=@$barang['stok_barang'] ?>">
+						<input type="number" name="stok_barang" class="form-control" placeholder="stok" value="<?= @$barang['stok_barang'] ?>">
 					</div>
 					<div class="form-group">
-						<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Deskripsi" name="deskripsi" rows="3" style="resize: none;"><?=@$barang['deskripsi'] ?></textarea>
+						<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Deskripsi" name="deskripsi" rows="3" style="resize: none;"><?= @$barang['deskripsi'] ?></textarea>
 					</div>
-				
+
 			</div>
 			<div class="col-2">
 				<div style="margin-left: 50px;margin-top: 8px;">
-					<a href=""><i class="far fa-times-circle" style="margin-left: 89%"></i></a>
+					<a href="penjual.php"><i class="far fa-times-circle" style="margin-left: 89%"></i></a>
 				</div>
-				<div>
-					<img width="200px" class="" src="../img/<?=@$barang['gambar_barang'] ?>">
+				<div class="img-fluid">
+					<img width="100%" height="100%" class="" src="img/<?= @$barang['gambar_barang'] ?>">
 				</div>
-				<div style="margin-top: 100px; margin-bottom: 20px;">
+				<div style="margin-top: 150px; margin-bottom: 20px;">
 					<button type="submit" class="btn btn-success" name="submit" style="width: 100%;">Save</button>
 				</div>
 				</form>

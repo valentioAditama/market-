@@ -145,6 +145,7 @@ if (!isset($_SESSION["login"])) {
 						<i class="fas fa-user-circle"></i>
 					<?php endif; ?>
 					<input type="file" name="gambar" accept="image/*" class="utama2" onchange="loadFile(event)">
+					<a href="penjual.php" class="btn btn-primary">Lihat Barang</a>
 				</div>
 			</div>
 		</div>

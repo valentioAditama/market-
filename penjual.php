@@ -1,8 +1,14 @@
 <?php
+session_start();
 require 'function.php';
-$id = $_GET['id'];
+$id = $_SESSION['login'];
+if (isset($_GET['id'])) {
 
-$penjual = query("SELECT barang.id_barang,data_user.profile,data_user.nama,data_user.nama_pelapak,barang.gambar_barang,barang.nama_barang,barang.harga_barang,barang.stok_barang FROM data_user,barang WHERE data_user.id_user = $id AND barang.id_user = $id");
+	$id = $_GET['id'];
+}
+
+$penjual = query("SELECT barang.*,data_user.nama,data_user.nama_pelapak FROM data_user join barang on barang.id_user = data_user.id_user WHERE data_user.id_user = $id");
+
 ?>
 
 <title>M4RKET</title>
@@ -26,7 +32,7 @@ $penjual = query("SELECT barang.id_barang,data_user.profile,data_user.nama,data_
 			<div class="col-sm-10">
 				<table>
 					<tr>
-						<td rowspan="3"><img class="penjual img-fluid" src="Profile/<?= $penjual[0]['profile'] ?>"></td>
+						<td rowspan="3"><img class="penjual img-fluid" src="Profile/<?= !empty($penjual[0]['profile']) ? $penjual[0]['profile'] : "default.png" ?>"></td>
 						<td>
 							<h3><?= $penjual[0]['nama'] ?></h3>
 						</td>
@@ -49,16 +55,23 @@ $penjual = query("SELECT barang.id_barang,data_user.profile,data_user.nama,data_
 			<div class="fiturpenjual col-sm-3">
 				<a href="">Rating</a>
 			</div>
-			<div class="fiturpenjual col-sm-3">
-				<a href="">Call</a>
-			</div>
+			<?php if ($penjual[0]['id_user'] == $_SESSION['login']) : ?>
+				<div class="fiturpenjual col-sm-3">
+					<a href="EditBarang.php?id=<?= $id ?>">Edit</a>
+				</div>
+			<?php else : ?>
+				<div class="fiturpenjual col-sm-3">
+					<a href="">Call</a>
+				</div>
+			<?php endif; ?>
+
 		</div>
 	</div>
 
 	<p class="tulisan">Iklan yang terpasang</p>
 	<?php foreach ($penjual as $data) : ?>
 		<div class="tabel">
-			<a href="deskripsi2.php?id_barang=<?= $data['id_barang'] ?>" class="link">
+			<a <?php if (isset($_GET['id'])) : ?>href="deskripsi.php?id=<?= $data['id_barang'] ?>" <?php else : ?> href="EditBarang.php?id=<?= $data['id_barang'] ?>" <?php endif; ?>class="link">
 				<table class="barangpenjual" cellpadding="3px" cellspacing="3px">
 					<tr>
 						<td class="" width="10%">

@@ -235,26 +235,19 @@ if (isset($_GET['query'])) {
                       </div>
                     </div>
                   </div>
-                  <div class=" modal-footer">
-<<<<<<< HEAD
-                    <button onclick="directWA()" id="dir" type="button" class="btn btn-primary"> Chat Pelapak</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success btnLanjut">Lanjutkan</button>
-=======
-                    <a href="chat/indexchat.html"><button type="button" class="btn btn-primary"><img src="icons8-chat-48.png" height="25px" alt=""> Chat</button></a>
-                    <a href="<?= getWALink(no_telepon($barang['no_tlp'])); ?>"><button type="button" class="btn btn-primary"> <img src="icons8-whatsapp-48.png" height="25px" alt=""> Chat Pelapak</button></a>
-                    <button type="button" class="btn btn-success btnLanjut ">Lanjutkan</button>
->>>>>>> cf19e67fb3d91429f5c3200bcd098075eeecb740
-                  </div>
+                  <a href="chat/indexchat.html"><button type="button" class="btn btn-primary"><img src="icons8-chat-48.png" height="25px" alt=""> Chat</button></a>
+                  <button type="button" onclick="directWA()" class="btn btn-primary"> <img src="icons8-whatsapp-48.png" height="25px" alt=""> Chat Pelapak</button>
+                  <button type="button" class="btn btn-success btnLanjut ">Lanjutkan</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <hr>
     </div>
+    <hr>
   </div>
+</div>
 </div>
 </div>
 <br>
@@ -279,7 +272,7 @@ if (isset($_GET['query'])) {
           <a href="chat/indexchat.html"><button class="btn btn-primary btn-sm" style="margin-top: 27px; margin-right: 50px;">Chat pelapak</button></a>
         </div>
         <div class="col-sm-3">
-          <a href="penjual.php"><button class="btn btn-outline-info btn-sm" style="margin-top: 27px; margin-left: -80px;">Lihat Toko</button></a>
+          <a href="penjual.php?id=<?= $barang['id_user'] ?>"><button class="btn btn-outline-info btn-sm" style="margin-top: 27px; margin-left: -80px;">Lihat Toko</button></a>
         </div>
       </div>
     </div>
@@ -296,20 +289,19 @@ if (isset($_GET['query'])) {
 <br>
 
 <script type="text/javascript">
-    function directWA(){
-      window.open("<?=getWALink(no_telepon($barang['no_tlp'])); ?>");
-      document.location.href = "";
-    }
-
+  function directWA() {
+    window.open("<?= getWALink(no_telepon($barang['no_tlp'])); ?>");
+    document.location.href = "";
+  }
 </script>
 
 
 <script type="text/javascript">
-    function setKukis(value){
-      
-      document.cookie = "tipe =" + value;
-    }
- </script>
+  function setKukis(value) {
+
+    document.cookie = "tipe =" + value;
+  }
+</script>
 
 <script>
   $(function() {
