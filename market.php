@@ -97,9 +97,9 @@ if (empty($daftarBarang)) {
 
           <form class="form-inline my-2 my-lg-0" method="get" action="">
             <input class="form-control mr-sm-2" type="search" placeholder="Search...." name="query" value="<?= @$query ?>" aria-label="Search">
-            <button class="btn  my-2 my-sm-0 bg-success text-white" type="submit">Search</button>
+            <button class="btn my-2 my-sm-0 bg-success text-white" type="submit">Search</button>
           </form>
-          <a href="simpan_keranjang.html"><img src="icons8-shopping-cart-100.png" height="50px" alt=""></a>
+          <a href="simpan_keranjang.php"><img src="icons8-shopping-cart-100.png" height="50px" alt=""></a>
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
