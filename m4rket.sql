@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Feb 2020 pada 16.33
--- Versi server: 10.4.6-MariaDB
--- Versi PHP: 7.3.9
+-- Generation Time: Mar 04, 2020 at 05:13 PM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `barang`
+-- Table structure for table `barang`
 --
 
 CREATE TABLE `barang` (
@@ -41,39 +41,26 @@ CREATE TABLE `barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `barang`
+-- Dumping data for table `barang`
 --
 
 INSERT INTO `barang` (`id_barang`, `id_user`, `nama_barang`, `kategori_barang`, `harga_barang`, `stok_barang`, `deskripsi`, `tanggal_barang`, `gambar_barang`) VALUES
-(130, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:34:34', '5e5a05fa99eaf.jpg'),
-(131, 86, 'PS4 Slim 500GB CFW Hen Full Game Garansi Resmi', 'gadget', 5500000, 20, 'PS4 slim 500GB CFW Hen Full Game Garansi Resmi\r\n\r\nFEATURES:\r\n- Garansi Sony Indonesia 1TH\r\n- Barang Dijamin Baru 100%\r\n- CFW HEN\r\n- Hanya bisa main offline, tidak bisa online\r\n\r\nBOX CONTENT\r\n1x PS4 SLIM 500GB\r\n1x Stik Original \r\n1x Headset\r\n1x Kabel HDMI\r\n1x Kabel USB Charge\r\n1x Kabel Power\r\n1x Box n book\r\n1x Manual cara menjalankan Exploit Hen untuk PS4 CFW', '2020-02-29 07:36:00', '5e5a0650ea4ff.jpg'),
-(132, 86, 'PS4 Slim 500gb/1000gb Full Games Digital RESMI', 'gadget', 3675000, 40, 'PS4 Slim 500gb/1000gb Full Games Digital \r\n\r\n\r\nApabila ada pertanyaan, bisa inbox, kami Fast Respon di Jam kerja :)\r\n\r\nKelengkapan :\r\n- Mesin 500gb/1000gb Full Games Digital Rekondisi seri 22xx, Fw 6,71\r\n- Stik - Tergantung pilihan di variasi \r\n- 1 Kabel Charger \r\n- 1 HDMI\r\n- 1 Kabel Power \r\n- Dus\r\n- Garansi Toko 1 Bulan , Segel Utuh\r\n- Tidak Boleh online\r\n- Drive tidak berfungsi \r\n\r\nUntuk yg 500gb ps4 slim\r\nGamenya :\r\n- dead stranding\r\n- pes 2020\r\n- gta 5\r\n- spiderman \r\n- Fifa 2020\r\n- god of war', '2020-02-29 07:37:38', '5e5a06b286e76.jpg'),
-(133, 86, 'Ps4 fat 1 TB special editions full games 500GB - 1TB', 'lain-lain', 3750000, 59, 'Permisi \r\nAssalamuikum\r\n\r\nIjin ngelapak kakak\r\n\r\nPs4 fat hen/cfw special editions metal gear sholid\r\n\r\nReady PS4 fat HeN/cfw HDD 500gb - 1TB. System Software 5.05, Support hdd external  . Siap pakai. Game tinggal pilih \r\n\r\nPs4 slim hen/cfw pengisian game lebih murah\r\nCuman ngeluarin buget 25-30 rbu udah bisa dapet game\r\n\r\n\r\nkelengkapan di dalam dus:\r\n1 unit ps4 fat hen\r\n1 stik wirelles ps4\r\n1 usb cas\r\n1 kabel hdmi\r\n1 kabel power\r\n\r\nGaransi 1 Bulan Full cover (Ganti Unit)\r\nGame bisa reques.', '2020-02-29 07:40:39', '5e5a07670f972.jpg'),
-(134, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:43:06', '5e5a07fa737bb.jpg'),
-(135, 86, 'realme 5i 3/32GB [5000mAh Massive Battery, Ultra-Wide', 'gadget', 1799000, 400, 'Warna\r\n\r\nOcean Blue\r\n\r\nForrest Green\r\n\r\n\r\n\r\nTampilan\r\n\r\nUkuran: 6,5 inci\r\n\r\nRasio Layar: 89%\r\n\r\nResolusi: HD + 720 * 1600\r\n\r\nPerlindungan: Corning Gorilla Glass 3\r\n\r\n\r\n\r\nUkuran &amp; berat\r\n\r\n164.4mm * 75.0mm * 8.95mm\r\n\r\n195g\r\n\r\n\r\n\r\nBaterai\r\n\r\n5000mAh (Typical Value)\r\n\r\n\r\n\r\n\r\n\r\nKamera\r\n\r\nAI Quad Camera\r\n\r\nNormal + Ultra Wide + Macro + Portrait\r\n\r\n\r\n\r\nNormal:\r\n\r\n12MP\r\n\r\n\r\n\r\nPDAF\r\n\r\nAperture f / 1.8\r\n\r\nHDR\r\n\r\nNightscape\r\n\r\nChroma Boost\r\n\r\n\r\n\r\nUltra Wide:\r\n\r\n8MP\r\n\r\nAperture f / 2.25\r\n\r\nNightscape\r\n\r\n119 Â° Â± 1,5 Â°\r\n\r\n\r\n\r\nMacro:\r\n\r\n2MP\r\n\r\nAperture f / 2.4\r\n\r\nFocus Length 4cm\r\n\r\n\r\n\r\nPortrait:\r\n\r\n2MP\r\n\r\nAperture f / 2.4\r\n\r\nPortrait Mode\r\n\r\n\r\n\r\nKamera Depan AI\r\n\r\n8MP\r\n\r\nKeindahan AI\r\n\r\nHDR\r\n\r\nTampilan Panorama\r\n\r\nTimelapse\r\n\r\n\r\n\r\nVideo\r\n\r\n720p / 1080p / 4K, 30fps\r\n\r\nSlo-Mo (240fps / 720p, 120fps / 1080p)\r\n\r\n\r\n\r\nFitur\r\n\r\nQualcomm Snapdragon 665 AIE\r\n\r\nProses produksi 11nm\r\n\r\n2.0Ghz\r\n\r\nMemori bisa diperluas hingga 256GB\r\n\r\n\r\n\r\nKonektivitas\r\n\r\nJenis Kartu SIM: dual nano-sim\r\n\r\nEkspansi microSD / Triple Slot,\r\n\r\nVoLTE\r\n\r\n\r\n\r\nNirkabel\r\n\r\nMendukung 2.4G / 5G Wi-Fi\r\n\r\nMendukung Bluetooth 5.0\r\n\r\n\r\n\r\n\r\n\r\nSensor\r\n\r\nGPS / Beidou / Galileo / Glonass / A-GPS\r\n\r\nSensor Induksi Magnetik\r\n\r\nSensor cahaya\r\n\r\nSensor jarak\r\n\r\nGyro meter\r\n\r\nSensor Akselerometer\r\n\r\nSensor Sidik Jari\r\n\r\nOTG\r\n\r\n\r\n\r\nSistem\r\n\r\nColorOS 6.1 berdasarkan Android P\r\n\r\n\r\n\r\nDalam kotak\r\n\r\nAdapter 5V2A * 1\r\n\r\nKabel Micro USB * 1\r\n\r\nBuklet Info Penting dan Kartu Garansi * 1\r\n\r\nPanduan Cepat * 1\r\n\r\nAlat Kartu SIM * 1\r\n\r\nFilm Pelindung Layar * 1\r\n', '2020-02-29 07:47:44', '5e5a0910958bd.jpg'),
-(136, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:34:34', '5e5a05fa99eaf.jpg'),
-(137, 86, 'Ps4 fat 1 TB special editions full games 500GB - 1TB', 'lain-lain', 3750000, 59, 'Permisi \r\nAssalamuikum\r\n\r\nIjin ngelapak kakak\r\n\r\nPs4 fat hen/cfw special editions metal gear sholid\r\n\r\nReady PS4 fat HeN/cfw HDD 500gb - 1TB. System Software 5.05, Support hdd external  . Siap pakai. Game tinggal pilih \r\n\r\nPs4 slim hen/cfw pengisian game lebih murah\r\nCuman ngeluarin buget 25-30 rbu udah bisa dapet game\r\n\r\n\r\nkelengkapan di dalam dus:\r\n1 unit ps4 fat hen\r\n1 stik wirelles ps4\r\n1 usb cas\r\n1 kabel hdmi\r\n1 kabel power\r\n\r\nGaransi 1 Bulan Full cover (Ganti Unit)\r\nGame bisa reques.', '2020-02-29 07:40:39', '5e5a07670f972.jpg'),
-(138, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:43:06', '5e5a07fa737bb.jpg'),
-(139, 86, 'Ps4 fat 1 TB special editions full games 500GB - 1TB', 'lain-lain', 3750000, 59, 'Permisi \r\nAssalamuikum\r\n\r\nIjin ngelapak kakak\r\n\r\nPs4 fat hen/cfw special editions metal gear sholid\r\n\r\nReady PS4 fat HeN/cfw HDD 500gb - 1TB. System Software 5.05, Support hdd external  . Siap pakai. Game tinggal pilih \r\n\r\nPs4 slim hen/cfw pengisian game lebih murah\r\nCuman ngeluarin buget 25-30 rbu udah bisa dapet game\r\n\r\n\r\nkelengkapan di dalam dus:\r\n1 unit ps4 fat hen\r\n1 stik wirelles ps4\r\n1 usb cas\r\n1 kabel hdmi\r\n1 kabel power\r\n\r\nGaransi 1 Bulan Full cover (Ganti Unit)\r\nGame bisa reques.', '2020-02-29 07:40:39', '5e5a07670f972.jpg'),
-(140, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:43:06', '5e5a07fa737bb.jpg'),
-(141, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:34:34', '5e5a05fa99eaf.jpg'),
-(142, 86, 'PS4 Slim 500GB CFW Hen Full Game Garansi Resmi', 'gadget', 5500000, 20, 'PS4 slim 500GB CFW Hen Full Game Garansi Resmi\r\n\r\nFEATURES:\r\n- Garansi Sony Indonesia 1TH\r\n- Barang Dijamin Baru 100%\r\n- CFW HEN\r\n- Hanya bisa main offline, tidak bisa online\r\n\r\nBOX CONTENT\r\n1x PS4 SLIM 500GB\r\n1x Stik Original \r\n1x Headset\r\n1x Kabel HDMI\r\n1x Kabel USB Charge\r\n1x Kabel Power\r\n1x Box n book\r\n1x Manual cara menjalankan Exploit Hen untuk PS4 CFW', '2020-02-29 07:36:00', '5e5a0650ea4ff.jpg'),
-(143, 86, 'PS4 Slim 500gb/1000gb Full Games Digital RESMI', 'gadget', 3675000, 40, 'PS4 Slim 500gb/1000gb Full Games Digital \r\n\r\n\r\nApabila ada pertanyaan, bisa inbox, kami Fast Respon di Jam kerja :)\r\n\r\nKelengkapan :\r\n- Mesin 500gb/1000gb Full Games Digital Rekondisi seri 22xx, Fw 6,71\r\n- Stik - Tergantung pilihan di variasi \r\n- 1 Kabel Charger \r\n- 1 HDMI\r\n- 1 Kabel Power \r\n- Dus\r\n- Garansi Toko 1 Bulan , Segel Utuh\r\n- Tidak Boleh online\r\n- Drive tidak berfungsi \r\n\r\nUntuk yg 500gb ps4 slim\r\nGamenya :\r\n- dead stranding\r\n- pes 2020\r\n- gta 5\r\n- spiderman \r\n- Fifa 2020\r\n- god of war', '2020-02-29 07:37:38', '5e5a06b286e76.jpg'),
-(144, 86, 'Ps4 fat 1 TB special editions full games 500GB - 1TB', 'lain-lain', 3750000, 59, 'Permisi \r\nAssalamuikum\r\n\r\nIjin ngelapak kakak\r\n\r\nPs4 fat hen/cfw special editions metal gear sholid\r\n\r\nReady PS4 fat HeN/cfw HDD 500gb - 1TB. System Software 5.05, Support hdd external  . Siap pakai. Game tinggal pilih \r\n\r\nPs4 slim hen/cfw pengisian game lebih murah\r\nCuman ngeluarin buget 25-30 rbu udah bisa dapet game\r\n\r\n\r\nkelengkapan di dalam dus:\r\n1 unit ps4 fat hen\r\n1 stik wirelles ps4\r\n1 usb cas\r\n1 kabel hdmi\r\n1 kabel power\r\n\r\nGaransi 1 Bulan Full cover (Ganti Unit)\r\nGame bisa reques.', '2020-02-29 07:40:39', '5e5a07670f972.jpg'),
-(145, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:43:06', '5e5a07fa737bb.jpg'),
-(146, 86, 'realme 5i 3/32GB [5000mAh Massive Battery, Ultra-Wide', 'gadget', 1799000, 400, 'Warna\r\n\r\nOcean Blue\r\n\r\nForrest Green\r\n\r\n\r\n\r\nTampilan\r\n\r\nUkuran: 6,5 inci\r\n\r\nRasio Layar: 89%\r\n\r\nResolusi: HD + 720 * 1600\r\n\r\nPerlindungan: Corning Gorilla Glass 3\r\n\r\n\r\n\r\nUkuran &amp; berat\r\n\r\n164.4mm * 75.0mm * 8.95mm\r\n\r\n195g\r\n\r\n\r\n\r\nBaterai\r\n\r\n5000mAh (Typical Value)\r\n\r\n\r\n\r\n\r\n\r\nKamera\r\n\r\nAI Quad Camera\r\n\r\nNormal + Ultra Wide + Macro + Portrait\r\n\r\n\r\n\r\nNormal:\r\n\r\n12MP\r\n\r\n\r\n\r\nPDAF\r\n\r\nAperture f / 1.8\r\n\r\nHDR\r\n\r\nNightscape\r\n\r\nChroma Boost\r\n\r\n\r\n\r\nUltra Wide:\r\n\r\n8MP\r\n\r\nAperture f / 2.25\r\n\r\nNightscape\r\n\r\n119 Â° Â± 1,5 Â°\r\n\r\n\r\n\r\nMacro:\r\n\r\n2MP\r\n\r\nAperture f / 2.4\r\n\r\nFocus Length 4cm\r\n\r\n\r\n\r\nPortrait:\r\n\r\n2MP\r\n\r\nAperture f / 2.4\r\n\r\nPortrait Mode\r\n\r\n\r\n\r\nKamera Depan AI\r\n\r\n8MP\r\n\r\nKeindahan AI\r\n\r\nHDR\r\n\r\nTampilan Panorama\r\n\r\nTimelapse\r\n\r\n\r\n\r\nVideo\r\n\r\n720p / 1080p / 4K, 30fps\r\n\r\nSlo-Mo (240fps / 720p, 120fps / 1080p)\r\n\r\n\r\n\r\nFitur\r\n\r\nQualcomm Snapdragon 665 AIE\r\n\r\nProses produksi 11nm\r\n\r\n2.0Ghz\r\n\r\nMemori bisa diperluas hingga 256GB\r\n\r\n\r\n\r\nKonektivitas\r\n\r\nJenis Kartu SIM: dual nano-sim\r\n\r\nEkspansi microSD / Triple Slot,\r\n\r\nVoLTE\r\n\r\n\r\n\r\nNirkabel\r\n\r\nMendukung 2.4G / 5G Wi-Fi\r\n\r\nMendukung Bluetooth 5.0\r\n\r\n\r\n\r\n\r\n\r\nSensor\r\n\r\nGPS / Beidou / Galileo / Glonass / A-GPS\r\n\r\nSensor Induksi Magnetik\r\n\r\nSensor cahaya\r\n\r\nSensor jarak\r\n\r\nGyro meter\r\n\r\nSensor Akselerometer\r\n\r\nSensor Sidik Jari\r\n\r\nOTG\r\n\r\n\r\n\r\nSistem\r\n\r\nColorOS 6.1 berdasarkan Android P\r\n\r\n\r\n\r\nDalam kotak\r\n\r\nAdapter 5V2A * 1\r\n\r\nKabel Micro USB * 1\r\n\r\nBuklet Info Penting dan Kartu Garansi * 1\r\n\r\nPanduan Cepat * 1\r\n\r\nAlat Kartu SIM * 1\r\n\r\nFilm Pelindung Layar * 1\r\n', '2020-02-29 07:47:44', '5e5a0910958bd.jpg'),
-(147, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:34:34', '5e5a05fa99eaf.jpg'),
-(148, 86, 'Ps4 fat 1 TB special editions full games 500GB - 1TB', 'lain-lain', 3750000, 59, 'Permisi \r\nAssalamuikum\r\n\r\nIjin ngelapak kakak\r\n\r\nPs4 fat hen/cfw special editions metal gear sholid\r\n\r\nReady PS4 fat HeN/cfw HDD 500gb - 1TB. System Software 5.05, Support hdd external  . Siap pakai. Game tinggal pilih \r\n\r\nPs4 slim hen/cfw pengisian game lebih murah\r\nCuman ngeluarin buget 25-30 rbu udah bisa dapet game\r\n\r\n\r\nkelengkapan di dalam dus:\r\n1 unit ps4 fat hen\r\n1 stik wirelles ps4\r\n1 usb cas\r\n1 kabel hdmi\r\n1 kabel power\r\n\r\nGaransi 1 Bulan Full cover (Ganti Unit)\r\nGame bisa reques.', '2020-02-29 07:40:39', '5e5a07670f972.jpg'),
-(149, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:43:06', '5e5a07fa737bb.jpg'),
-(150, 86, 'Ps4 fat 1 TB special editions full games 500GB - 1TB', 'lain-lain', 3750000, 59, 'Permisi \r\nAssalamuikum\r\n\r\nIjin ngelapak kakak\r\n\r\nPs4 fat hen/cfw special editions metal gear sholid\r\n\r\nReady PS4 fat HeN/cfw HDD 500gb - 1TB. System Software 5.05, Support hdd external  . Siap pakai. Game tinggal pilih \r\n\r\nPs4 slim hen/cfw pengisian game lebih murah\r\nCuman ngeluarin buget 25-30 rbu udah bisa dapet game\r\n\r\n\r\nkelengkapan di dalam dus:\r\n1 unit ps4 fat hen\r\n1 stik wirelles ps4\r\n1 usb cas\r\n1 kabel hdmi\r\n1 kabel power\r\n\r\nGaransi 1 Bulan Full cover (Ganti Unit)\r\nGame bisa reques.', '2020-02-29 07:40:39', '5e5a07670f972.jpg'),
-(151, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:43:06', '5e5a07fa737bb.jpg'),
-(152, 86, 'JAKET HODIEE SENSOR FASHON PRIA - JAKET HODIEE ', 'lain-lain', 130400, 50, 'Spesifikasi Product :\r\n\r\nBahan mat : Scoot puma premium\r\n\r\nPurring : quilthing full dakron\r\n\r\nSize Chart : M/L/xl\r\nM.LD 55 cm x Panjang 68 cm\r\nL.LD 56 cm x Panjang 69 cm\r\n58 cm x Panjang 70 cm\r\n\r\nWarna :\r\n*Maroon\r\n*navy\r\n*hitam', '2020-02-29 07:34:34', '5e5a05fa99eaf.jpg'),
-(153, 86, 'PS4 Slim 500GB CFW Hen Full Game Garansi Resmi', 'gadget', 5500000, 20, 'PS4 slim 500GB CFW Hen Full Game Garansi Resmi\r\n\r\nFEATURES:\r\n- Garansi Sony Indonesia 1TH\r\n- Barang Dijamin Baru 100%\r\n- CFW HEN\r\n- Hanya bisa main offline, tidak bisa online\r\n\r\nBOX CONTENT\r\n1x PS4 SLIM 500GB\r\n1x Stik Original \r\n1x Headset\r\n1x Kabel HDMI\r\n1x Kabel USB Charge\r\n1x Kabel Power\r\n1x Box n book\r\n1x Manual cara menjalankan Exploit Hen untuk PS4 CFW', '2020-02-29 07:36:00', '5e5a0650ea4ff.jpg');
+(68, 75, 'Teu Jelas ', 'gadget', 122, 1231, 'qweqeqe', '2019-10-26 18:12:08', '5db47058433be.jpg'),
+(71, 74, 'diazs', 'perlengkapan_sekolah', 10000, 19, 'bagus', '2019-10-27 02:01:14', '5db4ec5aaeffc.jpg'),
+(73, 79, 'KemodMangpang', 'lain-lain', 300000, 90, 'Bagus Buatan Kemod asli', '2019-10-27 02:22:27', '5db4f15387a90.jpg'),
+(75, 81, 'Badjoe', 'perlengkapan_sekolah', 100000, 10, 'Ada tintanya', '2019-10-27 14:30:04', '5db59bdc6fc6c.jpg'),
+(76, 81, 'alat', 'lain-lain', 25000, 100, 'bar bar bau', '2019-10-27 14:31:18', '5db59c26e4d70.jpeg'),
+(77, 81, 'Teh gelas ', 'makanan_minuman', 100000, 99, 'Bar bar bau', '2019-10-27 14:32:14', '5e5be7eb2d259.jpg'),
+(78, 81, 'baju + cincin', 'aksesoris', 30000, 100, 'Bar bar bau', '2019-10-27 14:33:00', '5db59c8c9b682.jpeg'),
+(79, 81, 'Cilok', 'makanan_minuman', 2000, 100, 'stok terbatas', '2019-10-27 14:34:11', '5db59cd3a3836.jpg'),
+(80, 75, 'qwewq', 'makanan&amp;minuman', 121132, 12, 'qwewqe', '2020-01-20 16:58:59', '5e25ce43a358e.jpeg'),
+(83, 83, 'Becak', 'Lainnya', 100000, 12, 'Becak Tigoeling', '2020-03-18 00:00:00', '..php'),
+(84, 81, 'Baju Renang', 'Lainnya', 10000, 16, 'Bagus', '2020-03-24 12:29:18', 'baju.jp');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data_user`
+-- Table structure for table `data_user`
 --
 
 CREATE TABLE `data_user` (
@@ -88,106 +75,134 @@ CREATE TABLE `data_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `data_user`
+-- Dumping data for table `data_user`
 --
 
 INSERT INTO `data_user` (`id_user`, `nama`, `nama_pelapak`, `no_tlp`, `email`, `username`, `password`, `profile`) VALUES
-(86, 'Diazs Martiansyah', 'Kantin', '089662251672', 'diazsmartiansyah28@gmail.com', 'diazs123', '$2y$10$cTqH9EXFq6b7g7xt85lDbe2sBpD2DsFoDnDk1oVDNcpAVkuHtP4lS', ''),
-(87, 'valentio aditama ', 'palen cigo', '0895371909287', 'valentioaditama8@gmail.com', 'valentio18', '$2y$10$bKbaxMQ02x6rCS4oY.9dN.2EPciBriRMIBD3ufkGpNwgl.t8C2v/C', '5e49f83de53c9.jpg'),
-(88, 'yusuf dwi', 'dwiLapak', '089128127391', 'dwiyusuf12@gmail.com', 'yusuf123', '$2y$10$PvCFRFg.B2Ra97K8GJu7xOeLbnCyJYQZg9oG8VgP92gPMLOg1ufkS', '');
+(65, 'd', 'd', NULL, '', 's', '$2y$10$vNxzLFcMhy2DP4Mcx7SSYeFqD1i17ngv3DiB3gXV/W2Lvr7Caqj8K', ''),
+(66, '123', '123', NULL, '', 'ee', '$2y$10$1zp4R6geDo32XZ8XapNefe9vpgMBvk1d6S3HVFvyFjYnOb1kxYEq.', ''),
+(67, 'diazs martiansyah', '', '', '', 'qq', '$2y$10$PUiRfX6.ezMf4rTy9UfRRuA0UK.J94KtX7CTgrlY5oxUGDqO..73C', ''),
+(68, 'diazs martiansyah', 'Diazs', '', '', 'diazs', '$2y$10$GwfGcb9vR4yp.364RvDqU.PBWCl09rhLd9Ql0SANjYQCU8vRoVtt.', ''),
+(69, 'diazsbudjang', '', '', '', 'walah', '$2y$10$e9bHdfNUUlNCmQ.o4xpAZOEWITxiWKkt0rrFCAJYEELtFGHeyjfIO', ''),
+(70, 'diazs', 'uhuy', '', '', '12351', '$2y$10$ZZ3JScj/MZe324UZAopUYOU10/D7aRXQAm/Icwp0Xrmfa7tHkSdfC', ''),
+(71, 'qeqeqe', 'qweqqw', '', '', 'qweee', '$2y$10$B5olgRSIClmUF67YsEaK3.ZbKAx0UQtcC7We3lRLakVCAmBUWvvya', ''),
+(72, 'q', 'q', 'q', '', 'w', '$2y$10$3cShCv.ObtAlmEA4qRHl7eQ/eSEZDcl5.UBW1i1KuODeatA2vMDBy', ''),
+(73, 'diazs', 'diazs_', '089283132', '', 'diazs123', '$2y$10$vNdVbeQV0/NrWB6I0O0SHOLvh/hy.7.jtvJ7uAR19.WqlfmY8bLBm', ''),
+(74, 'Diazs_Programmer', 'Diazs_kantin', '09981231', '', 'diazs_lc', '123456789', '5db5844b731d3.jpg'),
+(75, 'diazs martiansyah', 'Diazs Martiansyah', '019293413', '', '', '$2y$10$vEH24Q5gOcoNWoJGu9AarOU.bZx1jIU9OFRe9TrOSj6bYyCzOJfRS', ''),
+(76, 'd', 'd', 'd', '', 'd', '$2y$10$bWFAwxIo5nHtLTkfuB2XT.58t919lJsql9UJuHMl4Xlqclr.yzm7i', ''),
+(77, 'diazs martiansyah', 'diazs', '0819123214', '', 'jajang', '$2y$10$5sjDiUREJ2bbtNidLA2Ev.s4wgf71gl/UfPuVLZT2OSuKy.YMXgZm', ''),
+(78, 'm', 'm', '1920131313123', '', 'qwertyuiop', '$2y$10$P5oZDxbTvXhAuqCIPicp/.UO5kQ1BDSw4Smbe2OMBX9ImjFXZDDrG', ''),
+(79, 'Kemod', 'Kemod_123', '098123123387', '', 'kemod123', '$2y$10$PvricXatn/SGu0s1fIbAW.SZDMYxlyoQ7vnFJTBA1I0blgbvi5xfa', ''),
+(80, 'LOLO', 'LOLO', '102921321313', '', 'lolololo', '$2y$10$.onmM7KwnfuNJE2MaqZwZ.n6j3RiQJqiQSfrkP2HdBym2bXbM6rhG', ''),
+(81, 'adulahmad', 'adulahmad', '13131232138', '', 'adulahmad', '$2y$10$N9FpozxRn9vW.AKI/NIU7.KA8HBqkoaAHmJfwRPIIoDjciItFOZdS', ''),
+(83, 'dean', '1', '12312412412412', '', '1', '$2y$10$APmP4k/HbZPR.2A42IePXOGHHwEXPvR0ns.SBvKeCbM/YIAWKWp5S', ''),
+(84, 'diazsDw', 'Rumah Diazs', '089662251672', 'diazsmartiansyah28@gmail.com', 'diazs25', '$2y$10$KNjgHcsBdwxbP4MXVaBJSOcnX1PBjzx3uXdd7pTjgWdB4kdmi3pfy', '5e4933fda9c10.png'),
+(85, 'Dz', 'DzMrt', '02455126585', 'diazsmartiansyah.siswa@smkn4bdg.sch.id', 'diazs26', '$2y$10$9YVt7sRy73aRE0mXX5db0ueLRE3BMIq3XlpZ9LzjWBHEJrbrSXcBK', ''),
+(86, 'Diazs Martiansyah', 'Diazs Lapak', '089662251672', 'diazsmartiansyah28@gmail.com', 'diazs111', '$2y$10$vXLC/v1CU5/h4PQD7Cz5iuEMugn2p9BxedHcQsSXiqJc8mszo7iD6', '');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `penjual`
+-- Table structure for table `saran`
 --
 
-CREATE TABLE `penjual` (
-  `id_penjual` int(11) DEFAULT NULL,
-  `nama_lapak` varchar(255) DEFAULT NULL
+CREATE TABLE `saran` (
+  `id_saran` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `isi` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
-  `id_pembayaran` int(11) NOT NULL,
+  `id_transaksi` int(20) NOT NULL,
   `id_barang` int(11) NOT NULL,
-  `bayar` int(11) NOT NULL,
-  `kembalian` int(11) NOT NULL,
-  `tanggal_transaksi` datetime NOT NULL
+  `id_pembeli` int(11) NOT NULL,
+  `jumlah` int(10) NOT NULL,
+  `tanggal_transaksi` datetime NOT NULL,
+  `tipe_pembayaran` varchar(75) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
-INSERT INTO `transaksi` (`id_pembayaran`, `id_barang`, `bayar`, `kembalian`, `tanggal_transaksi`) VALUES
-(7, 0, 90000, 40000, '2019-08-18 18:03:47'),
-(8, 0, 60000, 30000, '2019-08-18 18:30:05'),
-(10, 0, 80000, 30000, '2019-08-18 18:40:18'),
-(11, 0, 50000, 20000, '2019-08-25 02:35:44'),
-(12, 0, 90000, 60000, '2019-08-25 02:36:59'),
-(13, 0, 60000, 30000, '2019-08-30 19:29:18'),
-(14, 0, 200000, 100000, '2019-08-30 19:30:02');
+INSERT INTO `transaksi` (`id_transaksi`, `id_barang`, `id_pembeli`, `jumlah`, `tanggal_transaksi`, `tipe_pembayaran`) VALUES
+(1583072344, 82, 86, 0, '2020-03-01 15:24:00', 'COD'),
+(1583073019, 82, 86, 0, '2020-03-01 15:30:19', 'COD'),
+(1583073128, 82, 86, 0, '2020-03-01 15:32:08', 'pulsa'),
+(1583073720, 82, 86, 2, '2020-03-01 15:42:00', 'transfer'),
+(1583074580, 82, 86, 3, '2020-03-01 15:56:20', 'transfer'),
+(1583074639, 82, 86, 1, '2020-03-01 15:57:19', 'transfer'),
+(1583074721, 82, 86, 3, '2020-03-01 15:58:41', 'transfer'),
+(1583074791, 82, 86, 2, '2020-03-01 15:59:51', 'transfer'),
+(1583075934, 82, 86, 2, '2020-03-01 16:18:54', 'pulsa'),
+(1583075968, 82, 86, 1, '2020-03-01 16:19:28', 'transfer'),
+(1583076245, 82, 86, 1, '2020-03-01 16:24:05', 'transfer'),
+(1583076593, 82, 86, 2, '2020-03-01 16:29:53', 'transfer'),
+(1583076940, 77, 86, 1, '2020-03-01 16:35:40', 'transfer'),
+(1583327377, 71, 86, 1, '2020-03-04 14:09:37', 'transfer');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `barang`
+-- Indexes for table `barang`
 --
 ALTER TABLE `barang`
   ADD PRIMARY KEY (`id_barang`),
   ADD KEY `id_user` (`id_user`);
 
 --
--- Indeks untuk tabel `data_user`
+-- Indexes for table `data_user`
 --
 ALTER TABLE `data_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indeks untuk tabel `transaksi`
+-- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  ADD PRIMARY KEY (`id_pembayaran`);
+  ADD PRIMARY KEY (`id_transaksi`),
+  ADD KEY `id_pembeli` (`id_pembeli`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `barang`
+-- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 
 --
--- AUTO_INCREMENT untuk tabel `data_user`
+-- AUTO_INCREMENT for table `data_user`
 --
 ALTER TABLE `data_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 
 --
--- AUTO_INCREMENT untuk tabel `transaksi`
---
-ALTER TABLE `transaksi`
-  MODIFY `id_pembayaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `barang`
+-- Constraints for table `barang`
 --
 ALTER TABLE `barang`
   ADD CONSTRAINT `barang_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `data_user` (`id_user`);
+
+--
+-- Constraints for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`id_pembeli`) REFERENCES `data_user` (`id_user`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
