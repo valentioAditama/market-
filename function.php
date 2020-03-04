@@ -281,13 +281,38 @@ $AD =($JDPH * $HA) - $JDPH;
 }
 
 function word_limit($string, $limit=20){
-    if (strlen($string)>$limit) {
+	$name = explode(" ", $string)[0];
+    if (strlen($name)>$limit) {
     	$word = mb_substr($string,0,$limit-3)."...";
     }
     else{
-    	$word = $string;
+    	$word = $name;
     }
     echo "$word";
+}
+
+function explode_money($money){
+	$start = -3;
+	$end = 3;
+	for($i = 0; $i<ceil(strlen($money)/3); $i++){
+		if (strlen($money)%3==2 && $i == floor(strlen($money)/3)) {
+			$array[$i] = mb_substr($money, 0,2,'UTF-8');
+		}elseif (strlen($money)%3==1 && $i == floor(strlen($money)/3)) {
+			$array[$i] = mb_substr($money, 0,1,'UTF-8');
+		}else{
+			$array[$i] = mb_substr($money, $start,$end,'UTF-8');
+		}
+		$start-=3;
+	}
+	$result = "";
+	for($i = count($array)-1; $i>-1; $i--){
+		if ($i != 0) {
+			$result.=$array[$i].".";
+		}else{
+			$result.=$array[$i];
+		}
+	}
+	echo "Rp.".$result.",-";
 }
 
 function no_telepon($no){

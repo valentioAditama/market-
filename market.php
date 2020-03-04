@@ -103,7 +103,7 @@ if (empty($daftarBarang)) {
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
-                <img height="30" width="30" style="border-radius: 50%;" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>" alt=""> Valentio
+                <img height="30" width="30" style="border-radius: 50%;" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>" alt=""> <?=word_limit($profile['nama'],8); ?>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="Profile.php">Edit Profile</a>

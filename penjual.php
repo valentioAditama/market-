@@ -84,7 +84,7 @@ $penjual = query("SELECT barang.*,data_user.nama,data_user.nama_pelapak FROM dat
 					</tr>
 					<tr>
 						<td class="" width="30%">
-							Rp.<?= $data['harga_barang'] ?>
+							<?= explode_money($data['harga_barang']) ?>
 						</td>
 					</tr>
 				</table>

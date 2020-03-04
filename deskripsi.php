@@ -140,7 +140,7 @@ if (isset($_GET['query'])) {
             <img src="Loading.gif" width="300" height="300" style="position: fixed; z-index: 2; left: 40%; top: 30%; background-color: black;">
           </div>
           <div class="col" style="margin-left: -500px; color: rgb(230, 91, 36); font-family: roboto; font-size: 34px;">
-            Rp.<?= $barang['harga_barang'] ?>
+            <?= explode_money($barang['harga_barang']) ?>
           </div>
         </div>
         <div class="col" style="margin-left: 130px; font-size: small; color: gray;">
@@ -220,7 +220,7 @@ if (isset($_GET['query'])) {
 
                         <div class="col" style="color: rgb(230, 91, 36); font-family: roboto;">
                           <br>
-                          Rp<?= $barang['harga_barang'] ?>
+                          <?= explode_money($barang['harga_barang']) ?>
                         </div>
                       </div>
                       <div class="row">

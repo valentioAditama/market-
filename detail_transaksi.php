@@ -186,14 +186,14 @@ $barang = query("
                         </div>
                         <div class="col-sm-2"
                             style="margin-top: 75px; color: rgb(230, 91, 36); font-family: roboto; font-size: 20px; font-weight: 600; ">
-                            Rp. <?=$harga_barang ?>
+                            <?=explode_money($harga_barang) ?>
                         </div>
                         <div class="col-sm-2" style="margin-top: 80px; margin-left: 60px;">
                             Total Belanja:
                         </div>
                         <div class="col-sm-2"
                             style="color: rgb(230, 91, 36); font-family: roboto; font-size: 20px; font-weight: 600; margin-top: 75px; margin-left: 60px;">
-                            Rp. <?=$total ?>
+                            <?=explode_money($total) ?>
                         </div>
                     </div>
                     <div class="row">
