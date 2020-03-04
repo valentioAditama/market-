@@ -273,7 +273,11 @@ $barang = query("SELECT * FROM barang");
 
           <!-- Page Heading -->
           <h1 class="h3 mb-2 text-gray-800">Data M4rket</h1>
+          <a href="tables.php"><button class="btn btn-primary btn-sm" style="margin: 10px">Data Barang</button></a>
           <a href="tableLaporan.html"><button class="btn btn-primary btn-sm" style="margin: 10px">Data Laporan</button></a>
+          <a href="Data_user.html"><button class="btn btn-primary btn-sm" style="margin: 10px">Data user</button></a>
+          <a href="data_penjual.html"><button class="btn btn-primary btn-sm" style="margin: 10px">Data Pejual </button></a>
+          <a href="data_transaksi.html"><button class="btn btn-primary btn-sm" style="margin: 10px">Data Transaksi</button></a>
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
