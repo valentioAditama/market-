@@ -312,14 +312,8 @@ $barang = query("SELECT * FROM barang");
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Id User</th>
-                                            <th>Nama </th>
-                                            <th>no Telp</th>
-                                            <th>email</th>
-                                            <th>Username</th>
-                                            <th>Password</th>
-                                            <th>Tanggal Laporan</th>
-                                            <th>Pesan Laporan</th>
+                                            <th>Id Penjual</th>
+                                            <th>Nama Pelapak</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -331,24 +325,6 @@ $barang = query("SELECT * FROM barang");
                                             </td>
                                             <td>
                                                 <?= $item['id_user'] ?>
-                                            </td>
-                                            <td>
-                                                <?= $item['nama_barang'] ?>
-                                            </td>
-                                            <td>
-                                                <?= $item['harga_barang'] ?>
-                                            </td>
-                                            <td>
-                                                <?= $item['stok_barang'] ?>
-                                            </td>
-                                            <td>
-                                                <?= $item['kategori_barang'] ?>
-                                            </td>
-                                            <td>
-                                                <?= $item['tanggal_barang'] ?>
-                                            </td>
-                                            <td>
-                                                <?= $item['tanggal_barang'] ?>
                                             </td>
                                             <td>
                                                 <a href="EditBarang.php?id=<?= $item['id_barang'] ?>"
