@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 04, 2020 at 05:13 PM
+-- Generation Time: Mar 06, 2020 at 12:19 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -104,6 +104,28 @@ INSERT INTO `data_user` (`id_user`, `nama`, `nama_pelapak`, `no_tlp`, `email`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `keranjang`
+--
+
+CREATE TABLE `keranjang` (
+  `id_keranjang` int(11) NOT NULL,
+  `id_barang` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `keranjang`
+--
+
+INSERT INTO `keranjang` (`id_keranjang`, `id_barang`, `id_user`) VALUES
+(6, 71, 86),
+(7, 71, 86),
+(10, 71, 86),
+(11, 71, 86);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `saran`
 --
 
@@ -166,6 +188,14 @@ ALTER TABLE `data_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
+-- Indexes for table `keranjang`
+--
+ALTER TABLE `keranjang`
+  ADD PRIMARY KEY (`id_keranjang`),
+  ADD KEY `id_barang` (`id_barang`),
+  ADD KEY `id_user` (`id_user`);
+
+--
 -- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
@@ -189,6 +219,12 @@ ALTER TABLE `data_user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 
 --
+-- AUTO_INCREMENT for table `keranjang`
+--
+ALTER TABLE `keranjang`
+  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- Constraints for dumped tables
 --
 
@@ -197,6 +233,13 @@ ALTER TABLE `data_user`
 --
 ALTER TABLE `barang`
   ADD CONSTRAINT `barang_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `data_user` (`id_user`);
+
+--
+-- Constraints for table `keranjang`
+--
+ALTER TABLE `keranjang`
+  ADD CONSTRAINT `keranjang_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`),
+  ADD CONSTRAINT `keranjang_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `data_user` (`id_user`);
 
 --
 -- Constraints for table `transaksi`
