@@ -183,7 +183,7 @@ if (isset($_GET['query'])) {
               <div name="link" type="submit" type2="phpMailler.php?buy=<?= $_SESSION['login'] ?>&sell=<?= $barang['id_barang'] ?>&jumlah=<?= @$jumlah ?>" class="btn btn-success btnBeli" data-toggle="modal" data-target="#modelId">
                 Beli sekarang!
               </div>
-              <button class="btn btn-danger">Simpan diKeranjang</button>
+              <button class="btn btn-danger addToCart" idbrg="<?=$barang['id_barang'] ?>" iduser="<?=$_SESSION['login'] ?>">Simpan diKeranjang</button>
             <?php endif; ?>
 
             <!-- Modal -->
@@ -306,6 +306,30 @@ if (isset($_GET['query'])) {
 <script>
   $(function() {
     $(".loading").hide();
+
+    $(".addToCart").on('click', function() {
+      event.preventDefault();
+
+      var idBrg = $(this).attr('idbrg');
+      var idUser = $(this).attr('iduser');
+      var href = "addToCart.php?id_brg="+idBrg+"&id_user="+idUser;
+        $(".modal-body").fadeOut(400);
+        $(".modal-header").fadeOut(400);
+        $(".modal-footer").fadeOut(400);
+        $.ajax({
+          'url': href,
+          'type': 'POST',
+          'success': function(result) {
+            $(".loading").css("display", "none");
+            Swal.fire(
+              'Success',
+              'Barang Tersimpan Di Keranjang',
+              'success'
+            )
+          }
+        });
+    });
+
     $(".btnBeli").on('click', function() {
       event.preventDefault();
 
