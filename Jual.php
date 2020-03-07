@@ -23,13 +23,17 @@ if (isset($_POST['Jual'])) {
 }
 
 ?>
-
+<!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
@@ -38,6 +42,10 @@ if (isset($_POST['Jual'])) {
 	<title>M4RKET</title>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="Allcss2.css">
 
@@ -220,43 +228,63 @@ if (isset($_POST['Jual'])) {
 
 	</span>
 
-	<div id="menu" class="nav">
-		<a href="#" class="close" onclick="closeSideMenu()">
-			<i class="fa fa-times"></i>
-		</a>
-		<a href=""><i class="fa fa-home"></i> Home</a>
-		<a href="AboutUs.php"> <i class="fa fa-question-circle"></i> About</a>
-		<a href="Jual.php"><i class="fa fa-cart-plus"></i> Jual</a>
-		<a href=""> <i class="fa fa-shopping-bag"></i> Kategori</a>
-		<a href="logout.php"> <i class="fa fa-sign-out"></i> Logout</a>
-	</div>
-	<form method="get" action="">
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary" style="height: 80px;">
+		<a class="navbar-brand" href="market.php  ">M4RKET</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-		<body style="background-color: rgb(236, 234, 226)">
-			<nav class="navbar navbar-expand-sm navbar-dark bg-light">
-				<a href="#" onclick="openSlideMenu()">
-					<i class="fa fa-bars"></i>
-				</a>
-				&nbsp;
-				<a class="navbar-brand text-dark" href="m4rket.php">MARKET</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-				<input type="text" class="form-control" name="query" value="<?= @$query ?>" placeholder="Cari produk barang disini.." />
-				<div class="input-group-append">
-					<button class="btn btn-outline-secondary" type="submit" name="cari">Cari</button>
-				</div>
-
-				&nbsp;
-	</form>
-	<?php if (!isset($_SESSION['login'])) : ?>
-		<a href="login.php"><button class="btn btn-success">Login</button></a>
-	<?php else : ?>
-		<a href="Profile.php"><img style="margin-left: 8px; margin-top: 10px;" height="30" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>">
-			<p style="font-size: 12px; margin: 0px; margin-left: 10px;"><?= word_limit($profile['nama'], 8) ?></p>
-		</a>
-	<?php endif; ?>
+			<form class="form-inline my-2 my-lg-0" method="get" action="">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search...." name="query" value="<?= @$query ?>" aria-label="Search">
+				<button class="btn  my-2 my-sm-0 bg-success text-white" type="submit">Search</button>
+			</form>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img height="30" width="30" style="border-radius: 50%" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>" alt=""> Valentio
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="Profile.php">Edit Profile</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="logout.php">Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</nav>
+	<!--
+      <nav class="navbar navbar-expand-sm navbar-dark bg-light">
+        <a href="#" onclick="openSlideMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        &nbsp;
+        <a class="navbar-brand text-dark" href="m4rket.php">MARKET</a>
 
-	</nav>
+        <input type="text" class="form-control" name="query" value="<?= @$query ?>" placeholder="Cari produk barang disini.." />
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit" name="cari">Cari</button>
+        </div>
+
+        &nbsp;
+  </form>
+  <?php if (!isset($_SESSION['login'])) : ?>
+    <a href="login.php"><button class="btn btn-success">Login</button></a>
+  <?php else : ?>
+    <a href="Profile.php"><img style="margin-left: 8px; margin-top: 10px;" height="30" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>">
+      <p style="font-size: 12px; margin: 0px; margin-left: 10px;"><?= word_limit($profile['nama'], 8) ?></p>
+    </a>
+  <?php endif; ?>
+  </nav>
+
+  </nav>
+  -->
+	<ol class="breadcrumb" style="height: 50px;">
+		<li class="breadcrumb-item h-25 "><a href="jual.php">Jual</a></li>
+		<li class="breadcrumb-item"><a href="AboutUs.php">About Us</a></li>
+		<li class="breadcrumb-item active"><a href="ContactUs.php">Contact Us</a></li>
+	</ol>
 
 
 

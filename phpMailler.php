@@ -1,13 +1,30 @@
 <?php
+session_start();
 
 require_once "vendor/autoload.php";
 require_once 'p.php';
-require_once 'function.php';
+include_once 'function.php';
+@$jumlah = $_GET['jumlah'];
+$user = $_SESSION['login'];
+$profile = query("SELECT * FROM data_user WHERE id_user = '$user'")[0];
+$nama_barang = $_SESSION['transaksi'][0]['nama_barang'];
+$id_barang = $_SESSION['transaksi'][0]['id_barang'];
+$pelapak = $_SESSION['transaksi'][0]['pelapak'];
+$_SESSION['transaksi'][0]['jumlah'] = $jumlah;
+$tanggal = date("Y-m-d H:i:s");
+$tipe = $_COOKIE['tipe'];
+$id_transaksi = time();
+$_SESSION['transaksi'][0]['id_transaksi'] = $id_transaksi;
+$_SESSION['transaksi'][0]['tanggal'] = $tanggal;
+
+$q = "INSERT INTO transaksi VALUES($id_transaksi,$id_barang,$user,$jumlah,'$tanggal','$tipe')";
+
+mysqli_query($conn,$q);
+
 
 $pembeli = $_GET['buy'];
 $id_barang = $_GET['sell'];
 @$jumlah = $_GET['jumlah'];
-
 
 
 $data_pembeli = query("SELECT * FROM data_user WHERE id_user = '$pembeli'")[0];

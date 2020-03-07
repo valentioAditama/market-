@@ -40,7 +40,7 @@ $foto = $data_user['profile'];
         <?php else : ?>
             <a href="profile.php">
                 <img width="50" height="50" src="Profile/<?= !empty($foto) ? "$foto" : "default.png" ?>">
-                <p><?= $data_user['nama'] ?> </p>
+                <p><?= word_limit($data_user['nama'],8) ?> </p>
             </a>
         <?php endif; ?>
     </nav>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 require 'function.php';
 if (!isset($_SESSION["login"])) {
@@ -6,14 +6,15 @@ if (!isset($_SESSION["login"])) {
 				alert('Gagal Masuk');
 				document.location.href='index.php';
 				</script>";
-				exit();
+	exit();
 }
 $id = $_SESSION['login'];
 $sql = "SELECT profile,nama FROM data_user WHERE id_user = $id";
 $result = query($sql);
- ?>
+?>
 
 <html>
+
 <head>
 	<link rel="shortcut icon" href="favicon.ico">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -23,76 +24,84 @@ $result = query($sql);
 	<link rel="stylesheet" type="text/css" href="FontAwosome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="Allcss.css">
 	<style type="text/css">
-	body{
-		background-color: #ddd;
-	}
-	a{
-		list-style: none;
-		color: white;
-	}
-	a:hover{
-		color: black;
-	}
-	.kotaksaran{
-		margin: auto;
-		margin-top: 50px;
-	}	
-	.saran{
-		text-align: center;
-		font-size: 30px;
-	}
-	.submit{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		height: 30px;
-		width: 120px;
-		background-color: white;
-		border-color: black;
-		border-radius: 10px;
-		margin-bottom: 50px;
-	}
-	.submit:hover{
-		background-color: #ddd;
-	}
-	td{
-		padding-top: 5px;
-	}
-	.sarannya
-	{
-		margin-left: 3px;
-		width: 349px;
-		height: 28px;
-		position: absolute;
-	}
-	.pajangan
-	{
-		width: 100px;
-		height: 28px;
-		margin-right: -6px;
-		background-color: black;
-		border-color: black;
-		font-family: arial;
-	}
-	.pajangan1
-	{
-		width: 100px;
-		height: 188px;
-		margin-right: -3px;
-		background-color: black;
-		border-color: black;
-		font-family: arial;
-	}
-	.text
-	{
-		height: 188px;
-		width: 349px;
-	}
-	
-</style>
+		body {
+			background-color: #ddd;
+		}
+
+		a {
+			list-style: none;
+			color: white;
+		}
+
+		a:hover {
+			color: black;
+		}
+
+		.kotaksaran {
+			margin: auto;
+			margin-top: 50px;
+		}
+
+		.saran {
+			text-align: center;
+			font-size: 30px;
+		}
+
+		.submit {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			height: 30px;
+			width: 120px;
+			background-color: white;
+			border-color: black;
+			border-radius: 10px;
+			margin-bottom: 50px;
+		}
+
+		.submit:hover {
+			background-color: #ddd;
+		}
+
+		td {
+			padding-top: 5px;
+		}
+
+		.sarannya {
+			margin-left: 3px;
+			width: 349px;
+			height: 28px;
+			position: absolute;
+		}
+
+		.pajangan {
+			width: 100px;
+			height: 28px;
+			margin-right: -6px;
+			background-color: black;
+			border-color: black;
+			font-family: arial;
+		}
+
+		.pajangan1 {
+			width: 100px;
+			height: 188px;
+			margin-right: -3px;
+			background-color: black;
+			border-color: black;
+			font-family: arial;
+		}
+
+		.text {
+			height: 188px;
+			width: 349px;
+		}
+	</style>
 	<title>M4RKET</title>
 </head>
+
 <body>
+	<!--
 	<div class="atas" style="margin-top: -32px;">
       <tr>
         <td><a href="ContactUs.php" class="atas1"> Contact Us</a></td>
@@ -137,9 +146,9 @@ $result = query($sql);
       </li>
       <li class="nav-item justify-content-end" style="float: right;margin-left: 28px;margin-top: 6px;">
         <div class="dropdown" style="">
-  <div class="dropbtn"><p class="namanya"><?=$result[0]['nama'] ?></p><?php if (isset($result[0]['profile'])) : ?> 
+  <div class="dropbtn"><p class="namanya"><?= $result[0]['nama'] ?></p><?php if (isset($result[0]['profile'])) : ?> 
             <img class="profile" src="Profile\<?= $result[0]['profile'] ?>" >
-          <?php else: ?>
+          <?php else : ?>
             <i class="fas fa-user-circle">Diazs</i>
         <?php endif; ?>
       </div>
@@ -152,34 +161,35 @@ $result = query($sql);
     </ul>
   </div>
 </nav>
+		  -->
+	<form>
+		<table class="kotaksaran">
+			<tr>
+				<td class="saran">Saran dan Kritik</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="pajangan" placeholder="Your Name" disabled="" class="pajangan"> <input type="text" name="nama" class="sarannya" autocomplete="off" autofocus="on"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="pajangan" disabled="" placeholder="Your Email" class="pajangan"> <input type="text" name="email" class="sarannya" autocomplete="off"></td>
+			</tr>
+			<tr>
+				<td><textarea placeholder="Your Message" disabled="" class="pajangan1" style="resize: none;"></textarea><textarea class="text" name="Saran" style="resize: none;"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" class="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
 
-		<form>
-			<table class="kotaksaran">
-				<tr>
-					<td class="saran">Saran dan Kritik</td>
-				</tr>
-				<tr>
-					<td><input type="text" name="pajangan" placeholder="Your Name" disabled="" class="pajangan"> <input type="text" name="nama" class="sarannya" autocomplete="off" autofocus="on"></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="pajangan" disabled="" placeholder="Your Email" class="pajangan"> <input type="text" name="email" class="sarannya" autocomplete="off"></td>
-				</tr>
-				<tr>
-					<td><textarea placeholder="Your Message" disabled="" class="pajangan1" style="resize: none;"></textarea><textarea class="text" name="Saran" style="resize: none;"></textarea></td>
-				</tr>
-				<tr>
-					<td><input type="submit" name="submit" class="submit" value="Submit"></td>
-				</tr>
-			</table>
-		</form>
-
-		<footer>
+	<!--<footer>
 				<h3 align="center">Contact Us</h3>
 				<h1 class="kontak" style="text-align: center;"><a href="https://www.instagram.com/m4rket_/?hl=id"><i class="fab fa-instagram"></i></a>
 									<a href="http://line.me/ti/p/~@262wsqjs"><i class="fab fa-line"></i></a>
 									<a href="https://twitter.com/m4rketbdg"><i class="fab fa-twitter"></i></a> 
 									<a href=""><i class="fab fa-facebook-square"></i></a></h1>
 				<h6 align="center" style="margin-top: 20px;">Copyright © 2019-2020 M4RKET. All rights reserved.</h6>
-		</footer>
+		</footer>-->
 </body>
+
 </html>
